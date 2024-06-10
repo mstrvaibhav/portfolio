@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    /* background-color: blue; */
+    background-color: #121212;
+    /* color: white; */
+  }
