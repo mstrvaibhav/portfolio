@@ -10,7 +10,8 @@ export default function RootLayout({ children }) {
 
   useEffect(() => {
     console.log("stay hungry stay foolish");
-  },[])
+    document.title = "realvaibhava ✦ designer ✦ artist ✦ dreamer"
+  })
 
   return (
     <html>
