@@ -531,12 +531,12 @@ const Connect = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 16px;
+    padding: 24px;
     width: 100%;
     border-top: 1px solid #353535;
 
     @media screen and (max-width: 640px){
-      padding: 16px 0px 0px 0px;
+      padding: 24px 0px 0px 0px;
     }
 
     .thought{
