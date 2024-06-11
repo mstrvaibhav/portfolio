@@ -25,7 +25,7 @@ export default function Home() {
               placeholder="blur"
             />
             <div>
-              <p className="name">vabhav aggarwal</p>
+              <p className="name">vaibhav aggarwal</p>
               <p className="bio">designer ✦ artist ✦ dreamer</p>
             </div>
           </ImageContainer>
@@ -229,7 +229,7 @@ const ImageContainer = styled.div`
 
       .name{
         color: #ffffff;
-        font-size: 16px;
+        font-size: 18px;
         font-style: normal;
         font-weight: 600;
         line-height: 20px; /* 125% */
@@ -240,7 +240,7 @@ const ImageContainer = styled.div`
         color: #808080;
         font-size: 16px;
         font-style: normal;
-        font-weight: 500;
+        font-weight: 400;
         line-height: 20px; /* 125% */
         letter-spacing: -0.2px;
       }
