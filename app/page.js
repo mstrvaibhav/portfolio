@@ -5,6 +5,10 @@ import ProjectCard from "@/component/projectcard";
 import Image from "next/image";
 import styled from "styled-components";
 import profile from "../public/profile.png"
+import rubberhose from "../public/rubberhose.png"
+import house from "../public/house.png"
+import kitchen from "../public/kitchen.png"
+import gengar from "../public/gengar.png"
 
 export default function Home() {
   return (
@@ -70,7 +74,8 @@ export default function Home() {
         {/* Bio of the author */}
         <AboutMe>
           <p className="about">About me</p>
-          <p className="body">A design wizard who loves design and code. I aim to make products beautiful and functionality comes implicitly with them. I specialise in making design systems. Currently, working as a UX Designer at MakeMyTrip and as a side project making an open-source design system.</p>
+          <p className="body">I am designer currently crafting cross platform consumer experiences at MakeMyTrip flights team.</p>
+          <p className="body">I focus on the intersection of form and function to create experiences that users become habituated to in no time. I am driven by curiosity and chase high level of craftsmanship and excellence in my work.</p>
         </AboutMe>
 
         {/* Projects */}
@@ -121,6 +126,89 @@ export default function Home() {
             </a>
           </div>
         </Stories>
+
+        {/* Art */}
+        <Art>
+          <h1>Art</h1>
+          <div>
+            <Image
+              src={rubberhose}
+              // fill
+              quality={100}
+              style={{
+                borderRadius: "18px",
+                boxSizing: "border-box",
+                width: "100%",
+                height: "auto",
+                objectFit: "cover"
+              }}
+              // priority={true}
+              placeholder='blur'
+              sizes="(max-width: 312px) 100%"
+              alt=""
+            />
+            <Image
+              src={house}
+              // fill
+              quality={100}
+              style={{
+                borderRadius: "18px",
+                boxSizing: "border-box",
+                width: "100%",
+                height: "auto",
+                objectFit: "cover"
+              }}
+              // priority={true}
+              placeholder='blur'
+              sizes="(max-width: 312px) 100%"
+              alt=""
+            />
+            <Image
+              src={kitchen}
+              // fill
+              quality={100}
+              style={{
+                borderRadius: "18px",
+                boxSizing: "border-box",
+                width: "100%",
+                height: "auto",
+                objectFit: "cover"
+              }}
+              // priority={true}
+              placeholder='blur'
+              sizes="(max-width: 312px) 100%"
+              alt=""
+            />
+            <Image
+              src={gengar}
+              // fill
+              quality={100}
+              style={{
+                borderRadius: "18px",
+                boxSizing: "border-box",
+                width: "100%",
+                height: "auto",
+                objectFit: "cover"
+              }}
+              // priority={true}
+              placeholder='blur'
+              sizes="(max-width: 312px) 100%"
+              alt=""
+            />
+          </div>
+          <p>Nope, none of the above art is AI generated. All these are made with love in Blender. I have a dream of representing India in an annual Blender Conference (hopefully 2030) ${`;)`}</p>
+        </Art>
+
+        {/* Things I bring to the table */}
+        <Things>
+          <p className="things">Things I bring to the table</p>
+          <ol>
+            <li className="body">Extremely strong attention to detail</li>
+            <li className="body">In depth knowledge of design systems to make consistent experiences</li>
+            <li className="body">An artistic taste of making things look beautiful</li>
+            <li className="body">Seeing & solving problems that no one sees (even the users)</li>
+          </ol>
+        </Things>
 
         {/* SayHi */}
         <SayHi>
@@ -477,6 +565,82 @@ const Stories = styled.div`
     }
 `
 
+const Art = styled.div`
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+
+    h1{
+      color: #FFFFFF;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 22px; /* 122.222% */
+      letter-spacing: -0.2px;
+    }
+
+    div{
+      display: grid;
+      gap: 8px;
+      grid-template-columns: repeat(auto-fit, minmax(312px, auto));
+    }
+
+    p{
+      color: #FFFFFF;
+      font-size: 14px;
+      font-style: italic;
+      font-weight: 500;
+      line-height: 23px; /* 164.286% */
+      align-self: stretch;
+    }
+`
+
+const Things = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    align-self: stretch;
+
+    .things{
+      color: #FFFFFF;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 22px; /* 122.222% */
+      letter-spacing: -0.2px;
+    }
+
+    ol{
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      box-sizing: border-box;
+    }
+
+    ol > li{
+      margin-left: 20px;
+    }
+
+    .body{
+      color: #808080;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px; /* 150% */
+      align-self: stretch;
+    }
+
+    @media screen and (max-width: 640px){
+      .about{
+        align-self: stretch;
+      }
+      .body{
+        align-self: stretch;
+      }
+    }
+`
+
 const SayHi = styled.div`
     display: flex;
     padding: 48px;
@@ -501,7 +665,7 @@ const SayHi = styled.div`
     }
 
     .sayhi-desc{
-      color: #808080;
+      color: #FFF;
       font-size: 16px;
       font-style: normal;
       font-weight: 400;
