@@ -1,6 +1,7 @@
 import Image from "next/image"
 import styled from "styled-components"
 import mmtemi from '../public/mmtemi.png'
+import redbusredesign from "../public/redbusredesign.png"
 
 export default function ProjectHub() {
     return (
@@ -24,7 +25,29 @@ export default function ProjectHub() {
                 <ProjectInfo>
                     <p className="heading">MakeMyTrip</p>
                     <p className="info">Fly Now, Pay Later: Revolutionising flight booking experience through EMI options</p>
-                    <p className="time">March 2024 - May 2024</p>
+                    <p className="time">Mar 2024 - May 2024</p>
+                </ProjectInfo>
+            </ProjectList>
+            <ProjectList href="https://medium.com/@realvaibhava/redesigned-redbus-bus-ticket-booking-flow-on-desktop-4abb4ee9d88b" target="blank">
+                <Image
+                    src={redbusredesign}
+                    quality={100}
+                    style={{
+                        border: "1px solid #353535",
+                        borderRadius: 18,
+                        boxSizing: "border-box",
+                        width: "100%",
+                        height: "auto"
+                    }}
+                    // priority={true}
+                    placeholder = 'blur'
+                    // sizes="100%"
+                    alt=""
+                />
+                <ProjectInfo>
+                    <p className="heading">redBus</p>
+                    <p className="info">Redesigned redBus bus ticket booking flow on desktop</p>
+                    <p className="time">Aug 2023 - Oct 2023</p>
                 </ProjectInfo>
             </ProjectList>
         </ProjectContainer>
