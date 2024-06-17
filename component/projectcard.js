@@ -14,7 +14,7 @@ export default function ProjectHub() {
                         border: "1px solid #353535",
                         borderRadius: 18,
                         boxSizing: "border-box",
-                        width: "100%",
+                        maxWidth: "100%",
                         height: "auto"
                     }}
                     // priority={true}
@@ -23,12 +23,12 @@ export default function ProjectHub() {
                     alt=""
                 />
                 <ProjectInfo>
-                    <p className="heading">MakeMyTrip</p>
-                    <p className="info">Fly Now, Pay Later: Revolutionising flight booking experience through EMI options</p>
-                    <p className="time">Mar 2024 - May 2024</p>
+                    <div className="heading">MakeMyTrip</div>
+                    <div className="info">Fly Now, Pay Later: Revolutionising flight booking experience through EMI options</div>
+                    <div className="time">Mar 2024 - May 2024</div>
                 </ProjectInfo>
             </ProjectList>
-            <ProjectList href="https://medium.com/@realvaibhava/redesigned-redbus-bus-ticket-booking-flow-on-desktop-4abb4ee9d88b" target="blank">
+            <ProjectList href="https://medium.com/@realvaibhava/fly-now-pay-later-revolutionising-flight-booking-experience-through-emi-options-aad04e0375b9" target="blank">
                 <Image
                     src={redbusredesign}
                     quality={100}
@@ -36,7 +36,7 @@ export default function ProjectHub() {
                         border: "1px solid #353535",
                         borderRadius: 18,
                         boxSizing: "border-box",
-                        width: "100%",
+                        maxWidth: "100%",
                         height: "auto"
                     }}
                     // priority={true}
@@ -45,9 +45,9 @@ export default function ProjectHub() {
                     alt=""
                 />
                 <ProjectInfo>
-                    <p className="heading">redBus</p>
-                    <p className="info">Redesigned redBus bus ticket booking flow on desktop</p>
-                    <p className="time">Aug 2023 - Oct 2023</p>
+                    <div className="heading">MakeMyTrip</div>
+                    <div className="info">Fly Now, Pay Later: Revolutionising flight booking experience through EMI options</div>
+                    <div className="time">Mar 2024 - May 2024</div>
                 </ProjectInfo>
             </ProjectList>
         </ProjectContainer>
