@@ -204,7 +204,7 @@ export default function Home() {
           <p className="things">Things I bring to the table</p>
           <ol>
             <li className="body">Extremely strong attention to detail</li>
-            <li className="body">In depth knowledge of design systems to make consistent experiences</li>
+            <li className="body">In depth knowledge of design systems to make consistent experience</li>
             <li className="body">An artistic taste of making things look beautiful</li>
             <li className="body">Seeing & solving problems that no one sees (even the users)</li>
           </ol>
