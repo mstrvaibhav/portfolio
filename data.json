@@ -1,0 +1,125 @@
+{
+  "banners": [
+    {
+      "type": "INLINE",
+      "subtype": "NON_BANK",
+      "position": 3,
+      "text": "Upto 15% OFF with code GISUPER",
+      "promo_code": "GISUPER",
+      "icon": "https://gos3.ibcdn.com/offerg-1550058133.png",
+      "url": "https://www.makemytrip.com/promos/df-amazon-1500.html",
+      "button": "APPLY",
+      "button_style": "DASH",
+      "action": "DEALS_ACTION_APPLY",
+      "on_action_subtext": "Pick a Flight to see offer price on next page",
+      "on_action_button_text": "APPLIED"
+    },
+    {
+      "type": "INLINE",
+      "subtype": "BANK",
+      "position": 8,
+      "offers": [
+        {
+          "text": "Upto 2000 off with code HDFCEMI",
+          "subtext": "On HDFC Bank Credit Card no cost EMI",
+          "promo_code": "HDFCEMI",
+          "icon": "https://gos3.ibcdn.com/hdfc-1599141391.png",
+          "url": "https://www.goibibo.com/offers/hdfc-flight-emi/",
+          "button": "APPLY",
+          "button_style": "DASH",
+          "action": "DEALS_ACTION_APPLY",
+          "on_action_subtext": "Pick a Flight to see offer price on next page",
+          "on_action_button_text": "APPLIED"
+        },
+        {
+          "text": "Upto 2000 off with code HDFCEMI",
+          "subtext": "On HDFC Bank Debit Card EMI",
+          "promo_code": "HDFCDCEMI",
+          "icon": "https://gos3.ibcdn.com/hdfc-1599141391.png",
+          "url": "https://www.goibibo.com/offers/hdfc-flight-emi/",
+          "button": "APPLY",
+          "button_style": "DASH",
+          "action": "DEALS_ACTION_APPLY",
+          "on_action_subtext": "Pick a Flight to see offer price on next page",
+          "on_action_button_text": "APPLIED"
+        },
+        {
+          "text": "Upto 5000 off with code GOONECARDEMI",
+          "subtext": "On OneCard",
+          "promo_code": "GOONECARDEMI",
+          "icon": "https://gos3.ibcdn.com/img-1681799080.jpg",
+          "url": "https://www.makemytrip.com/promos/df-amazon-1500.html",
+          "button": "APPLY",
+          "button_style": "DASH",
+          "action": "DEALS_ACTION_APPLY",
+          "on_action_subtext": "Pick a Flight to see offer price on next page",
+          "on_action_button_text": "APPLIED"
+        },
+        {
+          "text": "Upto 750 OFF with code GOYESEMI",
+          "subtext": "On Yes Bank Credit card No cost EMI for bookings above Rs 5000",
+          "promo_code": "GOYESEMI",
+          "icon": "https://gos3.ibcdn.com/YesBank_Logo-1718084456.png",
+          "url": "https://www.goibibo.com/offers/no-cost-emi-yesbank/",
+          "button": "APPLY",
+          "button_style": "DASH",
+          "action": "DEALS_ACTION_APPLY",
+          "on_action_subtext": "Pick a Flight to see offer price on next page",
+          "on_action_button_text": "APPLIED"
+        },
+        {
+          "text": "Flat 8% off with code GOIDFCEMI",
+          "subtext": "On IDFC FIRST Credit Credit Card EMI",
+          "promo_code": "GOIDFCEMI",
+          "icon": "https://gos3.ibcdn.com/offerg-1550058133.png",
+          "url": "https://www.makemytrip.com/promos/df-amazon-1500.html",
+          "button": "APPLY",
+          "button_style": "DASH",
+          "action": "DEALS_ACTION_APPLY",
+          "on_action_subtext": "Pick a Flight to see offer price on next page",
+          "on_action_button_text": "APPLIED"
+        },
+        {
+          "text": "Upto 1500 off with code GOAXISCREDIT",
+          "subtext": "On AXIS bank credit cards for bookings above Rs 5000",
+          "promo_code": "GOAXISCREDIT",
+          "icon": "https://gos3.ibcdn.com/axis-1599141479.png",
+          "url": "https://www.goibibo.com/offers/axis-bank-offer-df/",
+          "button": "APPLY",
+          "button_style": "DASH",
+          "action": "DEALS_ACTION_APPLY",
+          "on_action_subtext": "Pick a Flight to see offer price on next page",
+          "on_action_button_text": "APPLIED"
+        },
+        {
+          "text": "Upto 2000 off with code GOHSBCEMI",
+          "subtext": "Applicable on HSBC credit cards interest free EMI",
+          "promo_code": "GOHSBCEMI",
+          "icon": "https://gos3.ibcdn.com/hsbc-1657173389.jpg",
+          "url": "https://www.makemytrip.com/promos/df-amazon-1500.html",
+          "button": "APPLY",
+          "button_style": "DASH",
+          "action": "DEALS_ACTION_APPLY",
+          "on_action_subtext": "Pick a Flight to see offer price on next page",
+          "on_action_button_text": "APPLIED"
+        }
+      ]
+    },
+    {
+      "type": "INLINE",
+      "subtype": "COVID",
+      "position": 11,
+      "text": "Get 100% Refund on Covid Cancellation",
+      "subtext": "If you test positive after booking the Ticket. T&C apply",
+      "icon": "https://gos3.ibcdn.com/mweb_groundup_banner_icon_covid-1659426969.png"
+    },
+    {
+      "type": "INLINE",
+      "subtype": "HOTLINE",
+      "position": 14,
+      "text": "24x7 Hotline Support",
+      "subtext": "We have dedicated 24x7 support for ensuring you always get the support you need.",
+      "icon": "https://gos3.ibcdn.com/mweb_groundup_banner_icon_hotline-1659427373.png"
+    }
+  ]
+}

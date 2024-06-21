@@ -196,7 +196,7 @@ export default function Home() {
               alt=""
             />
           </div>
-          <p>Nope, none of the above art is AI generated. All these are made with love in Blender. I have a dream of representing India in an annual Blender Conference (hopefully 2030) ${`;)`}</p>
+          <p>Nope, none of the above art is AI generated. All these are made with love in Blender. I have a dream of representing India in an annual Blender Conference (hopefully 2030) {`:)`}</p>
         </Art>
 
         {/* Things I bring to the table */}

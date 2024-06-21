@@ -1,55 +1,58 @@
+"use client";
 import Image from "next/image"
 import styled from "styled-components"
 import mmtemi from '../public/mmtemi.png'
-import redbusredesign from "../public/redbusredesign.png"
+// import redbusredesign from "../public/redbusredesign.png"
+import ProjectData from "@/data/projectData"
 
 export default function ProjectHub() {
+
+    // fetching project data
+    const project = ProjectData.filter((el) => {
+        return el.on;
+    });
+
     return (
         <ProjectContainer>
-            <ProjectList href="https://medium.com/@realvaibhava/fly-now-pay-later-revolutionising-flight-booking-experience-through-emi-options-aad04e0375b9" target="blank">
-                <Image
-                    src={mmtemi}
-                    quality={100}
-                    style={{
-                        border: "1px solid #353535",
-                        borderRadius: 18,
-                        boxSizing: "border-box",
-                        maxWidth: "100%",
-                        height: "auto"
-                    }}
-                    // priority={true}
-                    placeholder = 'blur'
-                    // sizes="100%"
-                    alt=""
-                />
-                <ProjectInfo>
-                    <div className="heading">MakeMyTrip</div>
-                    <div className="info">Fly Now, Pay Later: Revolutionising flight booking experience through EMI options</div>
-                    <div className="time">Mar 2024 - May 2024</div>
-                </ProjectInfo>
-            </ProjectList>
-            <ProjectList href="https://medium.com/@realvaibhava/fly-now-pay-later-revolutionising-flight-booking-experience-through-emi-options-aad04e0375b9" target="blank">
-                <Image
-                    src={redbusredesign}
-                    quality={100}
-                    style={{
-                        border: "1px solid #353535",
-                        borderRadius: 18,
-                        boxSizing: "border-box",
-                        maxWidth: "100%",
-                        height: "auto"
-                    }}
-                    // priority={true}
-                    placeholder = 'blur'
-                    // sizes="100%"
-                    alt=""
-                />
-                <ProjectInfo>
-                    <div className="heading">MakeMyTrip</div>
-                    <div className="info">Fly Now, Pay Later: Revolutionising flight booking experience through EMI options</div>
-                    <div className="time">Mar 2024 - May 2024</div>
-                </ProjectInfo>
-            </ProjectList>
+            {
+                project.map((i) => {
+                    return (
+                        <ProjectList href={i.url} target="blank" key={i.heading}>
+                            <Image
+                                src={i.image}
+                                quality={100}
+                                // width={4800}
+                                // height={2560}
+                                style={{
+                                    border: "1px solid #353535",
+                                    borderRadius: 18,
+                                    boxSizing: "border-box",
+                                    maxWidth: "100%",
+                                    minWidth: "100%",
+                                    height: "auto"
+                                }}
+                                placeholder="blur"
+                                // blurDataURL={i.dataURL}
+                                alt={i.heading}
+                            />
+                            {/* <img
+                                src={project.image}
+                                style={{
+                                    border: "1px solid #353535",
+                                    borderRadius: 18,
+                                    boxSizing: "border-box",
+                                    maxWidth: "100%",
+                                    height: "auto"
+                                }} /> */}
+                            <ProjectInfo>
+                                <p className="heading" key={i.heading}>{i.heading}</p>
+                                <p className="info" key={i.info}>{i.info}</p>
+                                <p className="time" key={i.time}>{i.time}</p>
+                            </ProjectInfo>
+                        </ProjectList>
+                    )
+                })
+            }
         </ProjectContainer>
     )
 }
