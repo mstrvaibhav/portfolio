@@ -4,7 +4,7 @@ import rYde from "../public/rYde.png"
 
 const ProjectData = [
     {
-        heading: 'MakemyTrip',
+        heading: 'Trip',
         url: 'https://medium.com/@realvaibhava/fly-now-pay-later-revolutionising-flight-booking-experience-through-emi-options-aad04e0375b9',
         image: mmtemi,
         // blurDataURL: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/wcAAwAB/ayFFHgAAAAASUVORK5CYII=', // Example base64 string
