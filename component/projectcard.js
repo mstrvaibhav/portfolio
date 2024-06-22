@@ -3,7 +3,7 @@ import Image from "next/image"
 import styled from "styled-components"
 import mmtemi from '../public/mmtemi.png'
 // import redbusredesign from "../public/redbusredesign.png"
-import ProjectData from "@/data/projectData"
+import ProjectData from "@/data/projectInfo";
 
 export default function ProjectHub() {
 
