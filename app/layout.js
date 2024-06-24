@@ -16,8 +16,8 @@ export default function RootLayout({ children }) {
   return (
     <html>
       <head>
-        <title>Oh Yeah!</title>
-        <meta property="og:title" content="Just Checking Title" />
+        <title>Hello!</title>
+        <meta property="og:title" content="✦ realvaibhava ✦" />
         <meta property="og:description" content="Description of my Next.js website" />
         <meta property="og:image" content="https://www.vaibhava.me/preview.jpg" />
         <meta property="og:url" content="https://www.vaibhava.me/" />
