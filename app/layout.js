@@ -15,6 +15,15 @@ export default function RootLayout({ children }) {
 
   return (
     <html>
+      <head>
+        <title>Oh Yeah!</title>
+        <meta property="og:title" content="Just Checking Title" />
+        <meta property="og:description" content="Description of my Next.js website" />
+        <meta property="og:image" content="/preview.jpg" />
+        <meta property="og:url" content="https://vaibhava.me" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content="/preview.jpg" />
+      </head>
       <body className={inter.className} style={{ width: "100%", display: "flex" }}>
         <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
       </body>

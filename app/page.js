@@ -14,15 +14,6 @@ import Head from "next/head";
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>Just Checking Title</title>
-        <meta property="og:title" content="My Next.js Website" />
-        <meta property="og:description" content="Description of my Next.js website" />
-        <meta property="og:image" content="/preview.jpg" />
-        <meta property="og:url" content="https://vaibhava.me" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:image" content="/preview.jpg" />
-      </Head>
       <Main>
         <Media>
 
