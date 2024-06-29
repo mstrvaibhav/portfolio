@@ -91,20 +91,20 @@ export default function Home() {
             <p className="heading">History</p>
             <div className="history-list-container">
               <div className="history-list-hub">
-                <p className="time">Mar 2024 - Present</p>
                 <p className="company">UX Designer, MakeMyTrip</p>
+                <p className="time">Mar'24 - Present</p>
               </div>
               <div className="history-list-hub">
-                <p className="time">Nov 2023 - Dec 2023</p>
                 <p className="company">Product Designer, Scaler</p>
+                <p className="time">Nov'23 - Dec'23</p>
               </div>
               <div className="history-list-hub">
-                <p className="time">May 2023 - Nov 2023</p>
                 <p className="company">UX Designer, redBus</p>
+                <p className="time">May'23 - Nov'23</p>
               </div>
               <div className="history-list-hub">
-                <p className="time">Jun 2022 - Jul 2022</p>
                 <p className="company">UI Designer, Attentive</p>
+                <p className="time">Jun'22 - Jul'22</p>
               </div>
             </div>
             <p className="special-note">I have kind of been fortunate enough that even before my graduation I got to taste all levels of companies from early stage startups to big MnCs. My innate passion lies in working in startups.</p>
@@ -216,7 +216,7 @@ export default function Home() {
           <SayHi>
             <p className="heading">Say Hi!</p>
             <p className="sayhi-desc">I am on the lookout for full time opportunities to build something awesome. Drop an email if you’re hiring.</p>
-            <a className="sayhi-btn" href="https://x.com/realvaibhava" target="blank">
+            <a className="sayhi-btn" href="mailto:hi@vaibhava.me" target="blank">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                 <path fillRule="evenodd" clipRule="evenodd" d="M2.66667 1.66699C1.18054 1.66699 0 2.90159 0 4.37532V15.6253C0 17.0991 1.18054 18.3337 2.66667 18.3337H17.3333C18.8195 18.3337 20 17.0991 20 15.6253V4.37532C20 2.90159 18.8195 1.66699 17.3333 1.66699H2.66667ZM2.14934 3.48664C2.3026 3.38919 2.48089 3.33366 2.66667 3.33366H17.3333C17.5188 3.33366 17.6969 3.38903 17.85 3.48624L9.99942 9.76674L2.14934 3.48664ZM1.66667 5.23487V15.6253C1.66667 16.2141 2.13612 16.667 2.66667 16.667H17.3333C17.8638 16.667 18.3333 16.2141 18.3333 15.6253V5.23397L10.52 11.4847C10.2157 11.7281 9.78317 11.7281 9.47883 11.4847L1.66667 5.23487Z" fill="white" />
               </svg>
@@ -456,6 +456,9 @@ const History = styled.div`
       display: flex;
       align-items: flex-start;
       align-self: stretch;
+      @media screen and (max-width: 420px){
+        flex-direction: column;
+      }
     }
 
     .time{

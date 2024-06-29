@@ -1,8 +1,6 @@
 "use client";
 import Image from "next/image"
 import styled from "styled-components"
-import mmtemi from '../public/mmtemi.png'
-// import redbusredesign from "../public/redbusredesign.png"
 import ProjectData from "@/data/projectInfo";
 
 export default function ProjectHub() {
@@ -17,7 +15,7 @@ export default function ProjectHub() {
             {
                 project.map((i) => {
                     return (
-                        <ProjectList href={i.url} target="blank" key={i.heading}>
+                        <ProjectList href={i.url} target="blank" key={i.key}>
                             <Image
                                 src={i.image}
                                 quality={100}
@@ -35,17 +33,8 @@ export default function ProjectHub() {
                                 // blurDataURL={i.dataURL}
                                 alt={i.heading}
                             />
-                            {/* <img
-                                src={project.image}
-                                style={{
-                                    border: "1px solid #353535",
-                                    borderRadius: 18,
-                                    boxSizing: "border-box",
-                                    maxWidth: "100%",
-                                    height: "auto"
-                                }} /> */}
                             <ProjectInfo>
-                                <p className="heading" key={i.heading}>{i.heading}</p>
+                                <p className="heading" key={i.key}>{i.heading}</p>
                                 <p className="info" key={i.info}>{i.info}</p>
                                 <p className="time" key={i.time}>{i.time}</p>
                             </ProjectInfo>
