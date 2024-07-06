@@ -35,7 +35,8 @@ export default function Home() {
                 <p className="bio">designer ✦ artist ✦ dreamer</p>
               </div>
             </ImageContainer>
-            <SocialMediaContainer>
+            <a className="resume" href="https://drive.google.com/file/d/1Wp8qmCWLnPlQxOrGQM3sJlcfE2vRYCXx/view?usp=sharing" target="blank">Resume</a>
+            <SocialMediaContainer style={{display: "none"}}>
               <a href="https://www.linkedin.com/in/realvaibhava/" target="blank">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                   <g clipPath="url(#clip0_72_61)">
@@ -75,9 +76,9 @@ export default function Home() {
 
           {/* Bio of the author */}
           <AboutMe>
-            <p className="about">About me</p>
-            <p className="body">I am designer currently crafting cross platform consumer experiences at MakeMyTrip flights team.</p>
-            <p className="body">I focus on the intersection of form and function to create experiences that users become habituated to in no time. I am driven by curiosity and chase high level of craftsmanship and excellence in my work.</p>
+            <p className="about">About</p>
+            <p className="body">I am a designer currently crafting flight ticket booking experience at MakeMyTrip flights team.</p>
+            <p className="body">I apply game design principles to create engaging experiences. I am driven by curiosity and chase high level of craftsmanship and excellence in my work.</p>
           </AboutMe>
 
           {/* Projects */}
@@ -205,10 +206,10 @@ export default function Home() {
           <Things>
             <p className="things">Things I bring to the table</p>
             <ol>
-              <li className="body">Extremely strong attention to detail</li>
-              <li className="body">In depth knowledge of design systems to make consistent experience</li>
-              <li className="body">An artistic taste of making things look beautiful</li>
-              <li className="body">Seeing & solving problems that no one sees (even the users)</li>
+              <li className="body">Extremely strong attention to detail.</li>
+              <li className="body">In depth knowledge of design systems.</li>
+              <li className="body">An artistic taste of making things look beautiful.</li>
+              <li className="body">Seeing & solving problems that no one sees (even the users).</li>
             </ol>
           </Things>
 
@@ -298,10 +299,37 @@ const Media = styled.div`
 
 const Bio = styled.div`
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     gap: 24px;
     align-self: stretch;
+    position: relative;
+
+    @media screen and (max-width: 640px){
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+    .resume{
+      display: flex;
+      padding: 12px 40px;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      color: #FFF;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 20px; /* 125% */
+      letter-spacing: -0.2px;
+      border-radius: 999px;
+      background: #D12929;
+
+      @media screen and (max-width: 640px){
+        align-self: stretch;
+      }
+    }
 `
 const ImageContainer = styled.div`
     display: flex;
@@ -342,6 +370,7 @@ const SocialMediaContainer = styled.div`
     display: flex;
     align-items: center;
     gap: 16px;
+    /* visibility: hidden; */
 
     a{
       display: flex;
@@ -467,7 +496,7 @@ const History = styled.div`
       font-style: normal;
       font-weight: 400;
       line-height: 24px; /* 150% */
-      flex: 1 0 0;
+      text-align: right;
     }
 
     .company{
@@ -520,6 +549,25 @@ const Stories = styled.div`
       gap: 6px;
       padding: 12px 0px;
 
+      /* &::before{
+        content: "";
+        border-radius: 16px;
+        background: #1E1E1E;
+        display: block;
+        position: absolute;
+        z-index: -1;
+        inset: -2px;
+        opacity: 0;
+        transform: scale(0.95);
+        transition: all 0.3s ease;
+      }
+
+      &:hover::before{
+        transition: all 0.3s ease;
+        opacity: 1;
+        transform: scale(1.03);
+    } */
+
       .story-heading{
         color: #FFF;
         font-size: 16px;
@@ -549,25 +597,6 @@ const Stories = styled.div`
         font-weight: 500;
         line-height: 16px; /* 114.286% */
       }
-
-      /* &::before{
-        content: "";
-        border-radius: 16px;
-        background: #1E1E1E;
-        display: block;
-        position: absolute;
-        z-index: -1;
-        inset: -2px;
-        opacity: 0;
-        transform: scale(0.95);
-        transition: all 0.3s ease;
-      }
-
-      &:hover::before{
-        transition: all 0.3s ease;
-        opacity: 1;
-        transform: scale(1.03);
-    } */
     }
 `
 
