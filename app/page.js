@@ -35,7 +35,7 @@ export default function Home() {
                 <p className="bio">designer ✦ artist ✦ dreamer</p>
               </div>
             </ImageContainer>
-            <a className="resume" href="https://drive.google.com/file/d/1Wp8qmCWLnPlQxOrGQM3sJlcfE2vRYCXx/view?usp=sharing" target="blank">Resume</a>
+            <a className="resume" href="https://drive.google.com/file/d/1XY6id7mNDQUtS_v-vo3q1YbYXK9rdxBC/view?usp=sharing" target="blank">Resume</a>
             <SocialMediaContainer style={{display: "none"}}>
               <a href="https://www.linkedin.com/in/realvaibhava/" target="blank">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
