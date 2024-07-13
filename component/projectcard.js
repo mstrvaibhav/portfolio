@@ -22,7 +22,7 @@ export default function ProjectHub() {
                                 // width={4800}
                                 // height={2560}
                                 style={{
-                                    border: "1px solid #353535",
+                                    // border: "1px solid #353535",
                                     borderRadius: 18,
                                     boxSizing: "border-box",
                                     maxWidth: "100%",

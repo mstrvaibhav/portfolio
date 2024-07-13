@@ -8,7 +8,7 @@ const ProjectData = [
         heading: 'MakeMyTrip',
         url: 'https://medium.com/@realvaibhava/now-pay-partially-and-book-flight-tickets-505f81158cbe',
         image: mmtpp,
-        info: 'Now pay partially and book flight tickets',
+        info: 'Now pay partially to book flight tickets',
         time: "May'24 - Jun'24",
         key: "MMT Project 02",
         on: true

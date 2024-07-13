@@ -9,7 +9,7 @@ import rubberhose from "../public/rubberhose.png"
 import house from "../public/house.png"
 import kitchen from "../public/kitchen.png"
 import gengar from "../public/gengar.png"
-import Head from "next/head";
+import companies from "../public/companies.png"
 
 export default function Home() {
   return (
@@ -36,7 +36,7 @@ export default function Home() {
               </div>
             </ImageContainer>
             <a className="resume" href="https://drive.google.com/file/d/1XY6id7mNDQUtS_v-vo3q1YbYXK9rdxBC/view?usp=sharing" target="blank">Resume</a>
-            <SocialMediaContainer style={{display: "none"}}>
+            <SocialMediaContainer style={{ display: "none" }}>
               <a href="https://www.linkedin.com/in/realvaibhava/" target="blank">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                   <g clipPath="url(#clip0_72_61)">
@@ -77,9 +77,42 @@ export default function Home() {
           {/* Bio of the author */}
           <AboutMe>
             <p className="about">About</p>
-            <p className="body">I am a designer currently crafting flight ticket booking experience at MakeMyTrip flights team.</p>
-            <p className="body">I apply game design principles to create engaging experiences. I am driven by curiosity and chase high level of craftsmanship and excellence in my work.</p>
+            <p className="body">I am currently crafting flight booking experience at MakeMyTrip. I apply game design principles to create engaging experiences. I am driven by curiosity and chase high level of craftsmanship and excellence in my work.</p>
+            <Image
+              src={companies}
+              quality={100}
+              // width={4800}
+              // height={2560}
+              style={{
+                boxSizing: "border-box",
+                maxWidth: "100%",
+                minWidth: "100%",
+                height: "auto",
+                marginTop: "8px"
+              }}
+              placeholder="blur"
+              // blurDataURL={i.dataURL}
+              alt={"companies"}
+            />
+            {/* <p className="body">I apply game design principles to create engaging experiences. I am driven by curiosity and chase high level of craftsmanship and excellence in my work.</p> */}
           </AboutMe>
+
+          {/* Companies I worked at */}
+          {/* <Image
+            src={companies}
+            quality={100}
+            // width={4800}
+            // height={2560}
+            style={{
+              boxSizing: "border-box",
+              maxWidth: "100%",
+              minWidth: "100%",
+              height: "auto"
+            }}
+            placeholder="blur"
+            // blurDataURL={i.dataURL}
+            alt={"companies"}
+          /> */}
 
           {/* Projects */}
           <Project>
@@ -288,7 +321,6 @@ const Media = styled.div`
     flex-direction: column;
     align-items: flex-start;
     gap: 80px;
-
     @media screen and (max-width: 640px) {
     width: calc(100% - 32px); /* Full width minus the horizontal margins */
     margin: 32px 16px; /* Apply horizontal margin of 16px */
@@ -458,7 +490,7 @@ const Project = styled.div`
 `
 
 const History = styled.div`
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: flex-start;
     gap: 24px;
