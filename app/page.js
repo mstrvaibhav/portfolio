@@ -77,7 +77,7 @@ export default function Home() {
           {/* Bio of the author */}
           <AboutMe>
             <p className="about">About</p>
-            <p className="body">I am currently crafting flight booking experience at MakeMyTrip. I apply game design principles to create engaging experiences. I am driven by curiosity and chase high level of craftsmanship and excellence in my work.</p>
+            <p className="body">I am currently working as a Growth & Learning Experience Designer at Newton School. I apply game design principles to create engaging experiences. I am driven by curiosity and chase high level of craftsmanship and excellence in my work.</p>
             <Image
               src={companies}
               quality={100}
